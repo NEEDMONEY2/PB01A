@@ -4,8 +4,7 @@
 ---
 이진탐색 학습중
 
-```from bisect import bisect_left, bisect_right
-
+```from bisect import bisect_left, bisect_right  
 print(bisect_left(a,x))  
 print(bisect_right(a,x))
 ```
