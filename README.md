@@ -1,6 +1,7 @@
 # python 문법, 활용
 
 ### 2023-12-27(수)
+---
 이진탐색 학습중
 
 from bisect import bisect_left, bisect_right
