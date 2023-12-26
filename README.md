@@ -6,8 +6,7 @@
 
 ```from bisect import bisect_left, bisect_right
 
-print(bisect_left(a,x))
-
+print(bisect_left(a,x))  
 print(bisect_right(a,x))
 ```
 
