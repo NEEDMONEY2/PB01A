@@ -14,7 +14,8 @@ print(bisect_right(a,x))
 - 리스트중에 조합을 전부다 알려줌( 순서 상관 X, 즉 AB와 BA를 같이봄)
 - EX) [1,2,3]  = > [12] [13] [23]
 ```
-from itertools import combinations  
+from itertools import combinations
+
 for i in combinations(array, 3):  
   print(i)
 ```
