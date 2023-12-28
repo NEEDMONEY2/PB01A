@@ -10,5 +10,10 @@ print(bisect_left(a,x))
 print(bisect_right(a,x))
 ```
 
+### 2023-12-29(금)
+***
+from itertools import combinations
 
+lst = ['A', 'B', 'C']
+print(list(map(''.join, itertools.combinations(lst, 2))))
 
