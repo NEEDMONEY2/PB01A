@@ -3,6 +3,7 @@
 ### 
 
 - 정렬된 순서를 유지하면서 배열 a에 x를 삽입할때 가장 왼쪽 or 오른쪽 인덱스를 반환
+  
 ```
 from bisect import bisect_left, bisect_right
 
@@ -26,8 +27,7 @@ for i in combinations(array, 2):
 ```
 ---
 ```
-###
 
-- 반시계 방향으로 돌기
+### 반시계 방향으로 돌기
 - ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
 ```
