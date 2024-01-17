@@ -31,6 +31,6 @@ for i in combinations(array, 2):
 - 반시계 방향으로 돌기
   
 ```
-((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
+for i in ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
 
 ```
