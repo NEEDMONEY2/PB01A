@@ -1,16 +1,20 @@
 # python 문법, 활용
 
-### 2023-12-27(수)
+### 
 
 - 정렬된 순서를 유지하면서 배열 a에 x를 삽입할때 가장 왼쪽 or 오른쪽 인덱스를 반환
 ```
 from bisect import bisect_left, bisect_right
 
-print(bisect_left(a,x))  
-print(bisect_right(a,x))
+a = [1,2,3,3,5,6,7]
+x= 3
+
+print(bisect_left(a,x))  # 2
+print(bisect_right(a,x)) # 4
+
 ```
 ---
-### 2023-12-29(금)
+###
 - 리스트중에 조합을 전부다 알려줌( 순서 상관 X, 즉 AB와 BA를 같이봄)
 - EX) [1,2,3]  = > [12] [13] [23]
 ```
