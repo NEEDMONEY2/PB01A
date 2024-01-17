@@ -20,6 +20,12 @@ print(bisect_right(a,x)) # 4
 ```
 from itertools import combinations
 
-for i in combinations(array, 3):  
-  print(i)
+array= [1,2,3]
+for i in combinations(array, 2):
+    print(i)  #(1,2)(1,3)(2,3)
+```
+###
+```
+- 반시계 방향으로 돌기
+- ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
 ```
