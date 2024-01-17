@@ -24,6 +24,7 @@ array= [1,2,3]
 for i in combinations(array, 2):
     print(i)  #(1,2)(1,3)(2,3)
 ```
+---
 ###
 ```
 - 반시계 방향으로 돌기
