@@ -46,4 +46,5 @@ for i in ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
         check = True
         for i in range(2,int(n**0.5)+1): 
             if n % i == 0:    # 하나라도 나눠떨어지면 소수x
+-결론은 이 두개다 해당이 안되야 소수임
 ```
