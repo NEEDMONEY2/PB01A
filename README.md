@@ -48,3 +48,12 @@ for i in ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
             if n % i == 0:    # 하나라도 나눠떨어지면 소수x
 -결론은 이 두개다 해당이 안되야 소수임
 ```
+
+- 2차원 리스트에서 index찾기 
+  
+```
+for i, row in enumerate(arr):
+    for j, col in enumerate(row):
+       if col == "찾고자 하는 값":
+           print(i,j)
+```
