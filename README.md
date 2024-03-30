@@ -25,6 +25,19 @@ from itertools import combinations  # 중복없음
 array= [1,2,3]
 for i in combinations(array, 2):
     print(i)  #(1,2)(1,3)(2,3)
+////////////////////////////////////
+# 재귀로 구현해보기
+def comb(arr,n)
+  result = []
+  if n == 0:
+    return [[]]
+  for i in range(len(arr)):
+    elem = arr[i]
+    for rest in range(arr[i+1:],n-1)
+#  순열일때 == for rest in range( arr[:i] + arr[i+1:], n-1)
+      result.append([elem]+ rest)
+  retrun result
+
 ```
 
 
