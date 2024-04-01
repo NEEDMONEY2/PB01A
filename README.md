@@ -53,15 +53,24 @@ for i in ((dr+3)%4,(dr+2)%4,(dr+1)%4,dr)
 
 
 
-- 소수 찾기 
+- 소수 찾기 (feat.에라토스테네스의 체)
   
 ```
-        if n <2:          # 2보다 작으면 소수x
-            continue
-        check = True
-        for i in range(2,int(n**0.5)+1): 
-            if n % i == 0:    # 하나라도 나눠떨어지면 소수x
--결론은 이 두개다 해당이 안되야 소수임
+import math
+
+n = 1000000
+arr = [True for i in range(n+1)]
+
+for i in range(2,int(math.sqrt(n))+1):
+    if arr[i] ==True:
+        j = 2
+        while i * j <=n:
+            arr[i*j] = False
+            j += 1
+
+for i in range(2, n+1):
+    if arr[i]:
+        print(i, end =' ')
 ```
 
 - 2차원 리스트에서 index찾기 
