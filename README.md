@@ -81,3 +81,18 @@ for i, row in enumerate(arr):
        if col == "찾고자 하는 값":
            print(i,j)
 ```
+
+- 최대공약수와 최대공배수 구하기
+```
+# 최대공배수
+for j in range(min(a,b),0,-1):
+    if a % j == 0 and b % j == 0:
+        gcm = j
+        break
+
+# 최소공배수
+for i in range(max(a,b),(a*b)+1):
+    if i % a == 0 and i % b == 0:
+        lcm = i
+        break
+```
