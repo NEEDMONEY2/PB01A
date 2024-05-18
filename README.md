@@ -38,7 +38,7 @@ def comb(arr,n)
     for rest in range(arr[i+1:],n-1)
 #   for rest in range( arr[:i] + arr[i+1:], n-1) <== 순열일때 
       result.append([elem]+ rest)
-  retrun result
+  return result
 
 ```
 
