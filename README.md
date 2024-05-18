@@ -29,16 +29,29 @@ for i in combinations(array, 2):
 ////////////////////////////////////
 
 # 재귀로 구현해보기
-def comb(arr,n)
-  result = []
-  if n == 0:
-    return [[]]
-  for i in range(len(arr)):
-    elem = arr[i]
-    for rest in range(arr[i+1:],n-1)
-#   for rest in range( arr[:i] + arr[i+1:], n-1) <== 순열일때 
-      result.append([elem]+ rest)
-  return result
+# 조합
+def gen_combinations(arr, n):
+    result = []
+    if n == 0:
+        return [[]]
+    for i in range(0, len(arr)):
+        elem = arr[i]
+        rest_arr = arr[i + 1:]
+        for C in gen_combinations(rest_arr, n - 1):
+            result.append([elem] + C)
+    return result
+
+# 수열
+def gen_permutations(arr, n):
+    result = []
+
+    if n == 0:
+        return [[]]
+
+    for i, elem in enumerate(arr):
+        for P in gen_permutations(arr[:i] + arr[i + 1:], n - 1):
+            result += [[elem] + P]
+    return result
 
 ```
 
